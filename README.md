@@ -1,10 +1,10 @@
-# 🧬 Cystic Hygroma Detection using Deep Learning
+#  Cystic Hygroma Detection using Deep Learning
 
 A deep learning-based binary classification system for detecting **Cystic Hygroma** from ultrasound images, using a hybrid ensemble of **ResNet-50** (transfer learned on BUSI dataset) and **DenseNet-169 with CBAM attention**, trained with **4-fold stratified cross-validation**.
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 Cystic hygroma is a rare congenital lymphatic malformation typically detected via ultrasound. This project automates its classification (cystic hygroma vs. normal) using a two-stage deep learning pipeline:
 
@@ -15,7 +15,7 @@ Cystic hygroma is a rare congenital lymphatic malformation typically detected vi
 
 ---
 
-## 🗂️ Repository Structure
+##  Repository Structure
 
 ```
 cystic-hygroma-detection/
@@ -24,11 +24,11 @@ cystic-hygroma-detection/
 └── README.md
 ```
 
-> ⚠️ **Note:** Trained model weights, preprocessed images, and result outputs (confusion matrices, ROC curves, loss/accuracy plots) are stored in **Google Drive** due to file size constraints.
+>  **Note:** Trained model weights, preprocessed images, and result outputs (confusion matrices, ROC curves, loss/accuracy plots) are stored in **Google Drive** due to file size constraints.
 
 ---
 
-## 🧠 Model Architecture
+##  Model Architecture
 
 ### Stage 1 — BUSI Pre-training
 - **ResNet-50** pre-trained on ImageNet, fine-tuned on the [BUSI Dataset](https://www.kaggle.com/datasets/aryashah2k/breast-ultrasound-images-dataset) (benign / malignant / normal, 3-class)
@@ -49,7 +49,7 @@ Applies both **channel attention** and **spatial attention** on DenseNet-169 fea
 
 ---
 
-## 🖼️ Preprocessing Pipeline
+##  Preprocessing Pipeline
 
 Each ultrasound image goes through:
 1. **Grayscale conversion**
@@ -59,7 +59,7 @@ Each ultrasound image goes through:
 
 ---
 
-## 📊 Evaluation Metrics (per fold)
+##  Evaluation Metrics (per fold)
 
 - Accuracy
 - Sensitivity (Recall)
@@ -79,7 +79,7 @@ Final results reported as **Mean ± Std** across all 4 folds.
 
 ---
 
-## 🛠️ Requirements
+##  Requirements
 
 ```
 torch
@@ -96,7 +96,7 @@ tqdm
 
 ---
 
-## 🚀 How to Run
+##  How to Run
 
 1. Open `finalpaperpro.ipynb` in **Google Colab**
 2. Mount your Google Drive and set up the folder structure:
@@ -115,7 +115,7 @@ tqdm
 
 ---
 
-## 📚 Datasets
+##  Datasets
 
 | Dataset | Source | Usage |
 |--------|--------|-------|
@@ -124,7 +124,7 @@ tqdm
 
 ---
 
-## 👩‍💻 Author
+##  Author
 
 **srilakshmir513-hue**  
 Medical Image Analysis · Deep Learning · PyTorch
