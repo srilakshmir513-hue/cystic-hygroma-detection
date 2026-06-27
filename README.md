@@ -20,7 +20,7 @@ Cystic hygroma is a rare congenital lymphatic malformation typically detected vi
 ```
 cystic-hygroma-detection/
 │
-├── finalpaperpro.ipynb      # Main notebook (preprocessing → training → evaluation)
+├── cystichygroma.ipynb      # Main notebook (preprocessing → training → evaluation)
 └── README.md
 ```
 
@@ -98,7 +98,7 @@ tqdm
 
 ##  How to Run
 
-1. Open `finalpaperpro.ipynb` in **Google Colab**
+1. Open `cystichygroma.ipynb` in **Google Colab**
 2. Mount your Google Drive and set up the folder structure:
    ```
    MyDrive/paperproject/
